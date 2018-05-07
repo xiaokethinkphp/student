@@ -1,11 +1,11 @@
 <?php
-namespace app\admin\Controller;
+namespace app\admin\controller;
 /**
 * 教师控制器
 */
 class Teacher extends Common
 {
-	
+
 	public function teacherlist()
 	/*教师列表*/
 	{
@@ -40,7 +40,7 @@ class Teacher extends Common
 			$this->error($validate->getError());
 		}
 		$file1 = request()->file('teacher_thumb');
-		
+
 		if (empty($file1)) {
 			$this->error('请上传教师照片');
 		}
@@ -154,6 +154,6 @@ class Teacher extends Common
     	$this->redirect('teacher/teacherlist');
 	}
 
-	
+
 }
 ?>
