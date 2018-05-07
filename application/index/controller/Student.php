@@ -1,11 +1,10 @@
-<?php  
+<?php
 namespace app\index\controller;
 /**
 * 学生控制器
 */
 class Student extends Common
 {
-	
 	public function index()
 	/*学生首页*/
 	{
@@ -35,7 +34,7 @@ class Student extends Common
 		$this->assign('student_get_toArray',$student_get_toArray);
 		return view();
 	}
-	
+
 
 }
 ?>
